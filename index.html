@@ -31,9 +31,27 @@
         }
         h1 {
             text-align: center;
+            margin-top: 0;
+        }
+        h3 {
+            margin-bottom: 0;
         }
         .description {
           text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        model-viewer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
         
     </style>
@@ -42,14 +60,17 @@
 
     
 <body>
-    <h3>HEAD TEXT</h3>
-    <h1>All Espresso Martinis I`ve had drink</h1>
+    <div class="container">
+   
     
     <!-- model-viewer Element für das 3D-Modell und AR -->
     <model-viewer src="martiniglasprobe2.glb" alt="Espresso Martini"
                   ar ar-modes="scene-viewer quick-look"
                   environment-image="neutral" auto-rotate camera-controls>
-    </model-viewer
+    </model-viewer>
+ <h3>HEAD TEXT</h3>
+    <h1>All Espresso Martinis I`ve had drink</h1>
+    </div>
         
     <p>Tippe auf das Modell, um es in AR anzusehen.</p>
 
