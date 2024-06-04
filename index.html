@@ -42,21 +42,46 @@
         .description {
           text-align: center;
         }
+        .model-viewer-container {
+            position: relative;
+            width: 100vw; /* Full width of the viewport */
+            height: 70vh;  /* 70% of the viewport height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1; /* Ensure model viewer stays on top */
+            margin-top: -30px; /* Move the model-viewer slightly up */
+        }
+        model-viewer {
+            width: 100%;
+            height: 100%;
+        }
+        
 
     </style>
 </head>
 
 
     
-    <body>
+<body>
     
          <h3>ALICE PHAM</h3>
         <h1>ALL ESPRESSO MARTINI I´VE HAD DRINK</h1>
+
+
     
-        <!-- model-viewer Element für das 3D-Modell und AR -->
-        <model-viewer src="martiniglasprobe2.glb" alt="Espresso Martini"
-                  ar ar-modes="scene-viewer quick-look"
-                  environment-image="neutral" auto-rotate camera-controls>
+    
+    <div class="model-viewer-container">
+        <model-viewer id="modelViewer"
+                      src="martiniglasprobe2.glb"
+                      ios-src="cementkopf.usdz"
+                      alt="Espresso"
+                      ar
+                      auto-rotate
+                      camera-controls
+                      ar-modes="webxr scene-viewer quick-look" 
+                      environment-image="neutral">
         </model-viewer>
         
         <p>Tippe auf das Modell, um es in AR anzusehen.</p>
