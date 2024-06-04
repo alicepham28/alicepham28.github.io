@@ -1,20 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="de">
 
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Alice Pham</title>
-    
-    <!-- Einbinden der model-viewer Bibliothek -->
+
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-    
     <style>
-        
         body {
             font-family: Century Gothic, sans-serif;
             color: #FBFBEF;
@@ -26,24 +20,24 @@
             margin: 0;
             background-color: #30556191;
         }
-       
+
         h1 {
             text-align: center;
             margin-top: 0;
         }
-        
+
         h3 {
             margin-bottom: 0;
         }
-        
+
         .description {
-          text-align: center;
+            text-align: center;
         }
-        
+
         .model-viewer-container {
             position: relative;
             width: 100vw; /* Full width of the viewport */
-            height: 70vh;  /* 70% of the viewport height */
+            height: 70vh; /* 70% of the viewport height */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -51,57 +45,49 @@
             z-index: 1; /* Ensure model viewer stays on top */
             margin-top: -30px; /* Move the model-viewer slightly up */
         }
+
         model-viewer {
             width: 100%;
             height: 100%;
         }
-        
-
-</style>
+    </style>
 </head>
 
-    
 <body>
-    
     <h3>ALICE PHAM</h3>
     <h1>ALL ESPRESSO MARTINI I´VE HAD DRINK</h1>
-
 
     <div class="model-viewer-container">
         <model-viewer id="modelViewer"
                       src="martiniglasprobe2.glb"
-                      ios-src="martiniglastower.usdz"
-                      alt="Espresso"
+                      alt="Espresso Martini"
                       ar
                       auto-rotate
                       camera-controls
-                      ar-modes="webxr scene-viewer quick-look" 
+                      ar-modes="webxr scene-viewer quick-look"
                       environment-image="neutral">
         </model-viewer>
 
-        
         <p>Tippe auf das Modell, um es in AR anzusehen.</p>
 
         <div>
-            Eine künstlerische Darstellung von allen Espresso Martinis, die ich getrunken habe.
-            Eine Betrachtung der Normalität des Alkoholkonsums auf persönlicher und gesellschaftlicher Ebene.
-            Es soll einen Dialog eröffnen über die vielfältigen Perspektiven und Erlebnisse,  
-            die mit dem Alkoholkonsum verbunden sind.
-            Sie lädt dazu ein, sowohl den eigenen Konsum als auch den gesellschaftlichen Umgang mit Alkohol zu überdenken und 
-            regt dazu an, die Bedeutung von Normalität in diesem Zusammenhang zu reflektieren.
-            Diese Arbeit entstand im Rahmen eines Kunstkurses "3D Experimiente" bei Aram Bartholl an der HAW Hamburg.
+            Eine künstlerische Darstellung von allen Espresso Martinis, die ich getrunken habe.<br>
+            Eine Betrachtung der Normalität des Alkoholkonsums auf persönlicher und gesellschaftlicher Ebene.<br>
+            Es soll einen Dialog eröffnen über die vielfältigen Perspektiven und Erlebnisse, die mit dem Alkoholkonsum verbunden sind.<br>
+            Sie lädt dazu ein, sowohl den eigenen Konsum als auch den gesellschaftlichen Umgang mit Alkohol zu überdenken und regt dazu an, die Bedeutung von Normalität in diesem Zusammenhang zu reflektieren.<br>
+            Diese Arbeit entstand im Rahmen eines Kunstkurses "3D Experimiente" bei Aram Bartholl an der HAW Hamburg.<br>
         </div>
+    </div>
 
+    <a href="https://www.instagram.com/a__lychee" target="_blank">
+        <img src="instagram.png" alt="Instagram" width="50" height="50">
+    </a>
 
-    
-        <a href="https://www.instagram.com/a__lychee" target="_blank">
-        <img src="instagram.png" alt="Instagram" width="50" height="50">  
-        </a>
+    <iframe src="https://open.spotify.com/embed/playlist/3SrwN5dcopmY0IxRrKyJKN?si=dc0a36b85d214059" width="300" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-        <iframe src="https://open.spotify.com/embed/playlist/3SrwN5dcopmY0IxRrKyJKN?si=dc0a36b85d214059" width="300" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    
+    <footer>
+        <p>&copy; 2024 Alice Pham</p>
+    </footer>
 </body>
 
-
-    
 </html>
